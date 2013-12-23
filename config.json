@@ -1,0 +1,13 @@
+{
+    "tellstick": {
+        "token": "",
+        "token_secret": "",
+        "public_key": "",
+        "private_key": ""
+    },
+    "google": {
+        "email": "",
+        "password": "",
+        "spreadsheet": ""
+    }
+}
