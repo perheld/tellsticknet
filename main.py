@@ -10,12 +10,16 @@ def main():
     print "Sensors"
     sensors = Sensors(config)
     readout = sensors.readall()
-    print readout
+    for read in readout:
+        print read
+        print "    Temp: " + str(readout[read]['temp'])
+        print "    Humidity: " + str(readout[read]['humidity'])
 
     print "Devices"
     devices = Devices(config)
     readout = devices.readall()
-    print readout
+    for read in readout:
+	    print read['name']
 
 if __name__ == "__main__":
     main()
